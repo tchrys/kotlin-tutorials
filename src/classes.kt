@@ -84,8 +84,17 @@ class Example {
     }
 }
 
+//The name of a class used by itself (not as a qualifier to another name) acts as a reference
+// to the companion object of the class (whether named or not):
+class MyClass1 {
+    companion object Named { }
+}
+val x = MyClass1
 
-
+class MyClass2 {
+    companion object { }
+}
+val y = MyClass2
 
 
 
